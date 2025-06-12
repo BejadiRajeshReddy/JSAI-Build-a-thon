@@ -1,0 +1,257 @@
+body {
+  background: #f8f8f8;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border: 2px solid #bbb;
+  padding: 28px 40px 38px 40px;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 2.7em;
+  margin: 12px 0 28px 0;
+  color: #48516a;
+  text-shadow: 1px 2px 0px #e3e3e3;
+}
+
+.section-box {
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 36px;
+  padding: 20px 18px 18px 18px;
+  background: #fafcff;
+  box-shadow: 1px 2px 0px #e8e8e8 inset;
+}
+
+.section-box h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.5em;
+  letter-spacing: .04em;
+  color: #314869;
+  text-shadow: 1px 1px 0 #e2e2e2;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.section-box p {
+  margin-top: 0;
+  color: #444;
+  margin-bottom: 16px;
+  font-size: 1.13em;
+  font-style: italic;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: left;
+}
+
+.product {
+  flex: 1 1 200px;
+  min-width: 180px;
+  max-width: 240px;
+  background: #f5f7ff;
+  margin-bottom: 10px;
+  border: 1.5px dashed #ccd;
+  border-radius: 7px;
+  padding: 16px 10px;
+  text-align: center;
+  box-shadow: 0 1px 2px #f1f1f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product h3 {
+  font-size: 1.1em;
+  margin: 10px 0 3px 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #556;
+}
+
+.price {
+  color: #2b7b62;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+/* SVG/CSS doodle icons (simulate sketches) */
+
+.tent, .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  background: none;
+  display: block;
+  /* Simulate a hand-drawn border */
+  border: 1.5px dashed #888;
+  border-radius: 7px;
+  position: relative;
+}
+
+.tent::before, .icon::before {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 18%;
+  width: 70%;
+  height: 64%;
+  border-radius: 50%;
+  opacity: .7;
+}
+
+/* Tent icons */
+.tent1::after {
+  content: '';
+  position: absolute;
+  left: 23%;
+  top: 40%;
+  width: 54%;
+  height: 34%;
+  border-bottom: 2.7px solid #888;
+  border-radius: 50% 50% 80% 80%/50% 30% 60% 50%;
+  transform: rotate(-2deg);
+}
+.tent1::before {
+  border: 2.5px solid #888;
+  border-bottom: none;
+  border-radius: 60% 60% 20% 20%/70% 70% 25% 25%;
+}
+.tent2::after {
+  content: '';
+  position: absolute;
+  left: 23%;
+  top: 37%;
+  width: 54%;
+  height: 28%;
+  border-bottom: 2.7px solid #888;
+  border-radius: 50% 50% 80% 80%/50% 30% 60% 50%;
+  transform: rotate(4deg);
+}
+.tent2::before {
+  border: 2.5px solid #888;
+  border-bottom: none;
+  border-radius: 75% 60% 55% 40%/70% 70% 25% 25%;
+  top: 8%;
+  left: 13%;
+  width: 72%;
+}
+.tent3::after {
+  content: '';
+  position: absolute;
+  left: 19%;
+  top: 40%;
+  width: 62%;
+  height: 34%;
+  border-bottom: 3px solid #888;
+  border-radius: 60% 60% 80% 80%/50% 35% 70% 45%;
+}
+.tent3::before {
+  border: 2.8px solid #888;
+  border-bottom: none;
+  border-radius: 40% 60% 45% 65%/65% 85% 25% 15%;
+}
+
+.backpack1::before {
+  content: '';
+  width: 28px; height: 36px;
+  border: 2.5px solid #888;
+  border-radius: 20px 20px 30px 30px/18px 18px 16px 14px;
+  left: 14px; top: 12px;
+}
+.backpack1::after {
+  content: '';
+  position: absolute;
+  left: 10px; top: 20px;
+  width: 36px; height: 10px;
+  border-top: 2px solid #888;
+  border-radius: 10px 10px 20px 20px/7px 8px 9px 8px;
+}
+.backpack2::before {
+  content: '';
+  width: 32px; height: 38px;
+  border: 2.5px solid #888;
+  border-radius: 18px 18px 18px 20px/13px 15px 16px 19px; 
+  left: 12px; top: 10px;
+}
+.backpack2::after {
+  content: '';
+  position: absolute;
+  width: 28px; height: 8px;
+  left: 16px; top: 32px;
+  border-top: 2.1px solid #888;
+}
+.backpack3::before {
+  content: '';
+  left: 18px; top: 13px;
+  width: 20px; height: 32px;
+  border: 2.1px solid #888;
+  border-radius: 20px 17px 18px 20px/12px 12px 17px 14px;
+}
+
+.jacket::before {
+  content: '';
+  left: 10px; top: 14px;
+  width: 36px; height: 28px;
+  border: 2.5px solid #888;
+  border-radius: 19px 18px 18px 21px/24px 13px 13px 15px;
+}
+.pants::before {
+  content: '';
+  left: 21px; top: 7px;
+  width: 15px; height: 40px;
+  border-left: 2.5px solid #888;
+  border-right: 2.5px solid #888;
+}
+.pants::after {
+  content: '';
+  position: absolute;
+  width: 35px; height: 7px;
+  left: 10px; top: 42px;
+  border-bottom: 2.5px solid #888;
+}
+.boots::before {
+  content: '';
+  left: 6px; top: 35px;
+  width: 42px; height: 12px;
+  border-bottom: 2.5px solid #888;
+  border-radius: 8px 6px 10px 7px/3px 3px 8px 8px;
+}
+.boots::after {
+  content: '';
+  position: absolute;
+  left: 29px; top: 35px;
+  width: 18px; height: 18px;
+  border: 2.7px solid #888;
+  border-radius: 45px 10px 12px 35px/32px 2px 24px 16px;
+}
+
+@media (max-width: 780px) {
+  .container {
+    max-width: 99vw;
+    padding: 12px;
+  }
+  .product-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .product {
+    max-width: 90vw;
+  }
+}
